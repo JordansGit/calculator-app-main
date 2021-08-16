@@ -40,7 +40,6 @@ section {
 }
 
 .block {
-  border: 1px solid black; 
   border-radius: 10px; 
   color: hsl(221, 14%, 31%); 
   display: flex;
@@ -64,6 +63,7 @@ section {
 #seven, #eight, #nine, #four, #five, #six, #plus, #one, #two, #three, #minus, #point, #zero, #divide, #times {
   color: hsl(221, 14%, 31%); 
   background: hsl(30, 25%, 89%); 
+  box-shadow: 0 4px hsl(28, 16%, 65%);
 }
 
 .header, .display, #del, #reset, #equals {
@@ -72,10 +72,13 @@ section {
 
 #del, #reset {
   background: hsl(225, 21%, 49%); 
+  font-size: 20px; 
+  box-shadow: 0 4px hsl(224, 28%, 35%);
 }
 
 #equals {
   background: hsl(6, 63%, 50%); 
+  box-shadow: 0 4px hsl(6, 70%, 34%);
 }
 
 
