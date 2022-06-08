@@ -9,7 +9,6 @@ body {
   font-weight: 700; 
   font-size: 36px; 
   text-transform: uppercase;
-  background: hsl(222, 26%, 31%); 
   letter-spacing: 1px; 
 }
 
@@ -57,13 +56,6 @@ h2 {
   letter-spacing: 1.6px;
 }
 
-.theme-switcher {
-  background-color: black; 
-  padding: 4px 3px 2px 3px; 
-  border-radius: 20px; 
-  width: 67px; 
-  margin: 0 auto; 
-}
 
 .theme-label {
   padding: 3px 3px 2px 4px; 
@@ -80,21 +72,10 @@ ul {
   padding: 0;
 }
 
-label:hover {
-  cursor: pointer; 
-}
-
-input[type=radio] {
-  margin: 1px 0 0 3px; 
-  width: 16px; 
-  height: 16px; 
-}
-
 
 /* DISPLAY */ 
 
 .display {
-  background: hsl(224, 36%, 15%); 
   height: 45px;
   display: flex;
   align-items: center;
@@ -113,12 +94,10 @@ input[type=radio] {
   grid-template-columns: 100px 100px 100px 100px; 
   grid-template-rows: 60px 60px 60px 60px 60px; 
   gap: 20px; 
-  background: hsl(223, 31%, 20%); 
 }
 
 .block {
   border-radius: 10px; 
-  color: hsl(221, 14%, 31%); 
   display: flex;
   justify-content: center;
   align-items: center;
@@ -139,36 +118,253 @@ input[type=radio] {
   text-transform: lowercase;
 }
 
+#del, #reset {
+  font-size: 28px; 
+}
 
-/* Colour */ 
-#seven, #eight, #nine, #four, #five, #six, #plus, #one, #two, #three, #minus, #point, #zero, #divide, #times {
+input[type="radio"]:hover, .block:hover {
+  cursor: pointer; 
+}
+
+
+/* Toggle Switch */ 
+.theme-switcher {
+  padding: 5px 5px 5px 7px; 
+  border-radius: 20px; 
+  width: 67px; 
+  display: flex;
+  justify-content: space-evenly;
+}
+
+input[type="radio"] {
+  width: 16px; 
+  height: 16px; 
+  margin: 0;
+  -webkit-appearance: none;
+  appearance: none;
+  background-color: black;
+  border-radius: 50%;
+}
+
+
+/* THEME 1 COLOURS */ 
+/* bg */
+.theme1-body {
+  background: hsl(222, 26%, 31%); 
+}
+
+.theme1-switcher {
+  background-color: hsl(224, 36%, 15%); 
+}
+
+.theme1-display {
+  background: hsl(224, 36%, 15%); 
+}
+
+.theme1-input {
+  background: hsl(223, 31%, 20%); 
+}
+
+/* keys */ 
+.theme1-equals {
+  background: hsl(6, 63%, 50%); 
+  box-shadow: 0 4px hsl(6, 70%, 34%);
+}
+
+.theme1-del, .theme1-reset {
+  background: hsl(225, 21%, 49%); 
+  box-shadow: 0 4px hsl(224, 28%, 35%);
+}
+
+.theme1-seven, .theme1-eight, .theme1-nine, .theme1-four, .theme1-five, .theme1-six, .theme1-plus, .theme1-one, .theme1-two, .theme1-three, .theme1-minus, .theme1-point, .theme1-zero, .theme1-divide, .theme1-times {
   color: hsl(221, 14%, 31%); 
   background: hsl(30, 25%, 89%); 
   box-shadow: 0 4px hsl(28, 16%, 65%);
 }
 
-.header, .display, #del, #reset, #equals {
+/* radio button */ 
+#theme-one:checked {
+  background-color: hsl(6, 63%, 50%);
+}
+
+
+/* text */ 
+.theme1-header, .theme1-display, .theme1-del, .theme1-reset, .theme1-equals {
   color: white; 
 }
 
-#del, #reset {
-  background: hsl(225, 21%, 49%); 
-  font-size: 28px; 
-  box-shadow: 0 4px hsl(224, 28%, 35%);
+/* active states */ 
+.theme1-equals:hover {
+  background: hsl(6, 63%, 65%); 
 }
 
-#equals {
-  background: hsl(6, 63%, 50%); 
-  box-shadow: 0 4px hsl(6, 70%, 34%);
+.theme1-del:hover, .theme1-reset:hover {
+  background: hsl(225, 21%, 70%); 
 }
 
+.theme1-seven:hover, .theme1-eight:hover, .theme1-nine:hover, .theme1-four:hover, .theme1-five:hover, .theme1-six:hover, .theme1-plus:hover, .theme1-one:hover, .theme1-two:hover, .theme1-three:hover, .theme1-minus:hover, .theme1-point:hover, .theme1-zero:hover, .theme1-divide:hover, .theme1-times:hover {
+  background: hsl(30, 25%, 100%); 
+}
+
+#theme-one:checked:hover {
+  background-color: hsl(6, 63%, 65%);
+}
+
+
+
+
+/* THEME 2 COLOURS */ 
+/* bg */ 
+.theme2-body {
+  background: hsl(0, 0%, 90%); 
+}
+
+.theme2-switcher {
+  background-color: hsl(0, 5%, 81%); 
+}
+
+.theme2-display {
+  background: hsl(0, 0%, 93%); 
+}
+
+.theme2-input {
+  background: hsl(0, 5%, 81%); 
+}
+
+/* keys */ 
+.theme2-equals {
+  background: hsl(25, 98%, 40%); 
+  box-shadow: 0 4px hsl(25, 99%, 27%);
+}
+
+.theme2-del, .theme2-reset {
+  background: hsl(185, 42%, 37%); 
+  box-shadow: 0 4px hsl(185, 58%, 25%);
+}
+
+.theme2-seven, .theme2-eight, .theme2-nine, .theme2-four, .theme2-five, .theme2-six, .theme2-plus, .theme2-one, .theme2-two, .theme2-three, .theme2-minus, .theme2-point, .theme2-zero, .theme2-divide, .theme2-times {
+  background: hsl(45, 7%, 89%); 
+  box-shadow: 0 4px hsl(35, 11%, 61%);
+}
+
+/* text */ 
+.theme2-del, .theme2-reset, .theme2-equals {
+  color: hsl(0, 0%, 100%); 
+}
+
+.theme2-header, .theme2-display, .theme2-seven, .theme2-eight, .theme2-nine, .theme2-four, .theme2-five, .theme2-six, .theme2-plus, .theme2-one, .theme2-two, .theme2-three, .theme2-minus, .theme2-point, .theme2-zero, .theme2-divide, .theme2-times {
+  color: hsl(60, 10%, 19%); 
+}
+
+#theme-two:checked {
+  background-color: hsl(25, 98%, 40%);
+}
+
+/* active states */ 
+.theme2-equals:hover {
+  background: hsl(25, 98%, 60%); 
+}
+
+.theme2-del:hover, .theme2-reset:hover {
+  background: hsl(185, 42%, 55%); 
+}
+
+.theme2-seven:hover, .theme2-eight:hover, .theme2-nine:hover, .theme2-four:hover, .theme2-five:hover, .theme2-six:hover, .theme2-plus:hover, .theme2-one:hover, .theme2-two:hover, .theme2-three:hover, .theme2-minus:hover, .theme2-point:hover, .theme2-zero:hover, .theme2-divide:hover, .theme2-times:hover {
+  background: hsl(45, 7%, 100%); 
+}
+
+#theme-two:checked:hover {
+  background-color: hsl(25, 98%, 60%);
+}
+
+
+
+
+/* THEME 3 COLOURS */ 
+/* bg */ 
+.theme3-body {
+  background: hsl(268, 75%, 9%); 
+}
+
+.theme3-switcher, .theme3-display, .theme3-input {
+  background-color: hsl(268, 71%, 12%); 
+}
+
+/* keys */ 
+.theme3-equals {
+  background: hsl(176, 100%, 44%); 
+  box-shadow: 0 4px hsl(177, 92%, 70%);
+}
+
+.theme3-del, .theme3-reset {
+  background: hsl(281, 89%, 26%); 
+  box-shadow: 0 4px hsl(285, 91%, 52%);
+}
+
+.theme3-seven, .theme3-eight, .theme3-nine, .theme3-four, .theme3-five, .theme3-six, .theme3-plus, .theme3-one, .theme3-two, .theme3-three, .theme3-minus, .theme3-point, .theme3-zero, .theme3-divide, .theme3-times {
+  background: hsl(268, 47%, 21%); 
+  box-shadow: 0 4px hsl(290, 70%, 36%);
+}
+
+/* text */ 
+.theme3-del, .theme3-reset {
+  color: hsl(0, 0%, 100%); 
+}
+
+.theme3-equals {
+  color: hsl(198, 20%, 13%); 
+}
+
+.theme3-header, .theme3-display, .theme3-seven, .theme3-eight, .theme3-nine, .theme3-four, .theme3-five, .theme3-six, .theme3-plus, .theme3-one, .theme3-two, .theme3-three, .theme3-minus, .theme3-point, .theme3-zero, .theme3-divide, .theme3-times {
+  color: hsl(52, 100%, 62%); 
+}
+
+#theme-three:checked {
+  background-color: hsl(176, 100%, 44%);
+}
+
+/* active states */ 
+.theme3-equals:hover {
+  background: hsl(176, 100%, 75%); 
+}
+
+.theme3-del:hover, .theme3-reset:hover {
+  background: hsl(281, 89%, 55%); 
+}
+
+.theme3-seven:hover, .theme3-eight:hover, .theme3-nine:hover, .theme3-four:hover, .theme3-five:hover, .theme3-six:hover, .theme3-plus:hover, .theme3-one:hover, .theme3-two:hover, .theme3-three:hover, .theme3-minus:hover, .theme3-point:hover, .theme3-zero:hover, .theme3-divide:hover, .theme3-times:hover {
+  background: hsl(281, 89%, 55%); 
+}
+
+#theme-three:checked:hover {
+  background-color: hsl(176, 100%, 70%);
+}
 
 
 /* 
 To do: 
+css for the toggle switcher 
+ - make it so when you hover over the toggle-slider div, it turns to cursor pointer. 
+    - and use js so when you click it (anywhere inside the toggle slider), it checks then next 1 (so if #1 is checked and you click it, it switches to #2, if 2 then 3, if 3 back to 1)
+    - will need to remove default ability to select a radio button. 
+    js goes like this: 
+      (in css: the other 2 radio btns = display: none; the 1st 1 = display block);
+      onclick 
+        for loop 
+        ??? need to do it like a typical js galary. 
+          
 
-the theme switcher. 
-the actual calculator js
+js for toggle switcher (so it switches the themes). 
+
+js for the actual calculator 
+
+css for media queries 
+
+
+finished: 
+  css hover states 
+  html & css for the 3 theme colours 
+  some work on the css toggle switch 
 
 */ 
 
