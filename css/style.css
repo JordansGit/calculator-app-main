@@ -14,8 +14,8 @@ body {
 
 .container {
   margin: 0 auto; 
-  width: 1000px;
   padding-top: 80px; 
+  max-width: 1000px;
 }
 
 section {
@@ -344,9 +344,45 @@ input[type="radio"] {
 }
 
 
+/* MEDIA QUERIES */ 
+@media only screen and (max-width: 550px) {
+  #input {
+    grid-template-columns: 60px 60px 60px 60px;
+  }
+  section {
+    width: 300px;
+    padding: 20px;
+  }
+  .container {
+    padding: 0;
+  }
+  #header {
+    width: 330px;
+    padding: 10px 0;
+  }
+  body {
+    margin: 0;
+    font-size: 32px;
+  }
+  #del, #reset {
+    font-size: 22px;
+  }
+  #equals {
+    font-size: 26px;
+  }
+  .block {
+    padding: 4px 0 0 2px;
+  }
+  #display {
+    padding: 15px 20px;
+  }
+  #display span {
+    font-size: 45px;
+  }
+}
+
 /* 
 To do: 
-- js for the actual calculator 
 - css for media queries 
 
 
@@ -355,6 +391,7 @@ finished:
   html & css for the 3 theme colours 
   some work on the css toggle switch 
   js for toggle switcher (so it switches the themes). 
+- js for the actual calculator 
 
 */ 
 

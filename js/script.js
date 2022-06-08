@@ -193,6 +193,55 @@ function isChecked() {
   }
 }
 
+// Calulator Function 
+let keys = document.querySelectorAll('.block');
+let displayInput = document.querySelector('#display > span'); 
+let displayInputVal = '';
+
+// Add Click Event for Each Key Click
+for (var i = 0; i < keys.length; i++) {
+  console.log("keys " + i + ": " + keys[i]);
+  keys[i].addEventListener("click", myFunction);
+}
+
+// Update Display with Key Input 
+function myFunction(e) {
+  if (e.target != del && e.target != reset && e.target != equals) {
+    if (e.target.innerHTML == 'x') {
+      displayInputVal += '*'; 
+    } else {
+      displayInputVal += e.target.innerText;
+    }
+    displayInput.innerText = displayInputVal;   
+  }
+}
+
+// Reset Key 
+reset.addEventListener('click', () => {
+  displayInputVal = ''; 
+  displayInput.innerText = displayInputVal; 
+})
+
+// Delete Key 
+del.addEventListener('click', () => {
+  displayInputVal = displayInputVal.split(""); 
+  displayInputVal.pop()
+  displayInputVal = displayInputVal.join(""); 
+  displayInput.innerText = displayInputVal; 
+})
+
+// Equals Key 
+equals.addEventListener('click', () => {
+  
+  displayInputVal = eval(displayInputVal).toString(); 
+  if (displayInputVal == undefined) {
+    displayInputVal = '';
+  } 
+  displayInput.innerText = displayInputVal;
+})
 
 
+/* to do 
+  - add a comma for the 4th/7th/10th/... number if the input has 4/... consecutive numbers input in a row. 
 
+*/ 
