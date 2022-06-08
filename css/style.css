@@ -28,7 +28,7 @@ section {
 
 /* HEADER */ 
 
-.header {
+#header {
   display: flex; 
   justify-content: space-between;  
   width: 530px; 
@@ -58,38 +58,42 @@ h2 {
 
 
 .theme-label {
-  padding: 3px 3px 2px 4px; 
   border-radius: 20px; 
-  width: 57px; 
   margin: 0 auto; 
 }
 
 ul {
   list-style-type: none; 
   display: flex; 
-  justify-content: space-between; 
+  justify-content: center; 
   margin: 0; 
   padding: 0;
+}
+
+li {
+  width: 21px;
+  text-align: center;
+  padding: 10px 0 5px 0;
 }
 
 
 /* DISPLAY */ 
 
-.display {
+#display {
   height: 45px;
   display: flex;
   align-items: center;
   justify-content: flex-end;
 }
 
-.display span {
+#display span {
   font-size: 52px;
 }
 
 
 /* INPUT */ 
 
-.input {
+#input {
   display: grid;
   grid-template-columns: 100px 100px 100px 100px; 
   grid-template-rows: 60px 60px 60px 60px 60px; 
@@ -122,13 +126,13 @@ ul {
   font-size: 28px; 
 }
 
-input[type="radio"]:hover, .block:hover {
+input[type="radio"]:hover, label:hover, .block:hover {
   cursor: pointer; 
 }
 
 
 /* Toggle Switch */ 
-.theme-switcher {
+#theme-switcher {
   padding: 5px 5px 5px 7px; 
   border-radius: 20px; 
   width: 67px; 
@@ -142,7 +146,6 @@ input[type="radio"] {
   margin: 0;
   -webkit-appearance: none;
   appearance: none;
-  background-color: black;
   border-radius: 50%;
 }
 
@@ -343,28 +346,15 @@ input[type="radio"] {
 
 /* 
 To do: 
-css for the toggle switcher 
- - make it so when you hover over the toggle-slider div, it turns to cursor pointer. 
-    - and use js so when you click it (anywhere inside the toggle slider), it checks then next 1 (so if #1 is checked and you click it, it switches to #2, if 2 then 3, if 3 back to 1)
-    - will need to remove default ability to select a radio button. 
-    js goes like this: 
-      (in css: the other 2 radio btns = display: none; the 1st 1 = display block);
-      onclick 
-        for loop 
-        ??? need to do it like a typical js galary. 
-          
-
-js for toggle switcher (so it switches the themes). 
-
-js for the actual calculator 
-
-css for media queries 
+- js for the actual calculator 
+- css for media queries 
 
 
 finished: 
   css hover states 
   html & css for the 3 theme colours 
   some work on the css toggle switch 
+  js for toggle switcher (so it switches the themes). 
 
 */ 
 

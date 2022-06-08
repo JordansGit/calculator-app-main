@@ -1,3 +1,9 @@
+let header = document.getElementById('header'); 
+let themeSwitcher = document.getElementById('theme-switcher'); 
+let display = document.getElementById('display'); 
+let input = document.getElementById('input'); 
+
+let zero = document.getElementById('zero'); 
 let one = document.getElementById('one'); 
 let two = document.getElementById('two'); 
 let three = document.getElementById('three'); 
@@ -25,15 +31,168 @@ for (var i = 0; i < btnGroup.length; i++) {
 
 function isChecked() {
   for (var i = 0; i < btnGroup.length; i++) {
-    if (btnGroup[i].checked) {
-      console.log(btnGroup[i]);
-    }
-    // if btnGroup [0].checked, display theme 1, if ...[1]... theme 2, if ...[2]... theme 3. 
+    if (btnGroup[0].checked) {
+      // remove other classes 
+      document.body.className="";
+      header.className="";
+      themeSwitcher.className="";
+      display.className="";
+      input.className="";
+
+      zero.className="";
+      one.className="";
+      two.className="";
+      three.className="";
+      four.className="";
+      five.className="";
+      six.className="";
+      seven.className="";
+      eight.className="";
+      nine.className="";
+      plus.className="";
+      minus.className="";
+      divide.className="";
+      times.className="";
+      del.className="";
+      point.className="";
+      reset.className="";
+      equals.className="";
+
+      // add theme1 classes 
+      document.body.classList.add('theme1-body'); 
+      header.classList.add('theme1-header'); 
+      themeSwitcher.classList.add('theme1-switcher'); 
+      display.classList.add('theme1-display'); 
+      input.classList.add('theme1-input'); 
+
+      zero.classList.add('block', 'theme1-zero'); 
+      one.classList.add('block', 'theme1-one'); 
+      two.classList.add('block', 'theme1-two'); 
+      three.classList.add('block', 'theme1-three'); 
+      four.classList.add('block', 'theme1-four'); 
+      five.classList.add('block', 'theme1-five'); 
+      six.classList.add('block', 'theme1-six'); 
+      seven.classList.add('block', 'theme1-seven'); 
+      eight.classList.add('block', 'theme1-eight'); 
+      nine.classList.add('block', 'theme1-nine'); 
+      plus.classList.add('block', 'theme1-plus'); 
+      minus.classList.add('block', 'theme1-minus'); 
+      divide.classList.add('block', 'theme1-divide'); 
+      times.classList.add('block', 'theme1-times'); 
+      del.classList.add('block', 'theme1-del'); 
+      point.classList.add('block', 'theme1-point'); 
+      reset.classList.add('block', 'theme1-reset'); 
+      equals.classList.add('block', 'theme1-equals'); 
+
+    } else if (btnGroup[1].checked) {
+      // remove other classes 
+      document.body.className="";
+      header.className="";
+      themeSwitcher.className="";
+      display.className="";
+      input.className="";
+
+      zero.className="";
+      one.className="";
+      two.className="";
+      three.className="";
+      four.className="";
+      five.className="";
+      six.className="";
+      seven.className="";
+      eight.className="";
+      nine.className="";
+      plus.className="";
+      minus.className="";
+      divide.className="";
+      times.className="";
+      del.className="";
+      point.className="";
+      reset.className="";
+      equals.className="";
+
+      // add theme2 classes 
+      document.body.classList.add('theme2-body'); 
+      header.classList.add('theme2-header'); 
+      themeSwitcher.classList.add('theme2-switcher'); 
+      display.classList.add('theme2-display'); 
+      input.classList.add('theme2-input'); 
+
+      zero.classList.add('block', 'theme2-zero'); 
+      one.classList.add('block', 'theme2-one'); 
+      two.classList.add('block', 'theme2-two'); 
+      three.classList.add('block', 'theme2-three'); 
+      four.classList.add('block', 'theme2-four'); 
+      five.classList.add('block', 'theme2-five'); 
+      six.classList.add('block', 'theme2-six'); 
+      seven.classList.add('block', 'theme2-seven'); 
+      eight.classList.add('block', 'theme2-eight'); 
+      nine.classList.add('block', 'theme2-nine'); 
+      plus.classList.add('block', 'theme2-plus'); 
+      minus.classList.add('block', 'theme2-minus'); 
+      divide.classList.add('block', 'theme2-divide'); 
+      times.classList.add('block', 'theme2-times'); 
+      del.classList.add('block', 'theme2-del'); 
+      point.classList.add('block', 'theme2-point'); 
+      reset.classList.add('block', 'theme2-reset'); 
+      equals.classList.add('block', 'theme2-equals'); 
+
+    } else if (btnGroup[2].checked) {
+      // remove other classes 
+      document.body.className="";
+      header.className="";
+      themeSwitcher.className="";
+      display.className="";
+      input.className="";
+
+      zero.className="";
+      one.className="";
+      two.className="";
+      three.className="";
+      four.className="";
+      five.className="";
+      six.className="";
+      seven.className="";
+      eight.className="";
+      nine.className="";
+      plus.className="";
+      minus.className="";
+      divide.className="";
+      times.className="";
+      del.className="";
+      point.className="";
+      reset.className="";
+      equals.className="";
+
+      // add theme3 classes 
+      document.body.classList.add('theme3-body'); 
+      header.classList.add('theme3-header'); 
+      themeSwitcher.classList.add('theme3-switcher'); 
+      display.classList.add('theme3-display'); 
+      input.classList.add('theme3-input'); 
+
+      zero.classList.add('block', 'theme3-zero'); 
+      one.classList.add('block', 'theme3-one'); 
+      two.classList.add('block', 'theme3-two'); 
+      three.classList.add('block', 'theme3-three'); 
+      four.classList.add('block', 'theme3-four'); 
+      five.classList.add('block', 'theme3-five'); 
+      six.classList.add('block', 'theme3-six'); 
+      seven.classList.add('block', 'theme3-seven'); 
+      eight.classList.add('block', 'theme3-eight'); 
+      nine.classList.add('block', 'theme3-nine'); 
+      plus.classList.add('block', 'theme3-plus'); 
+      minus.classList.add('block', 'theme3-minus'); 
+      divide.classList.add('block', 'theme3-divide'); 
+      times.classList.add('block', 'theme3-times'); 
+      del.classList.add('block', 'theme3-del'); 
+      point.classList.add('block', 'theme3-point'); 
+      reset.classList.add('block', 'theme3-reset'); 
+      equals.classList.add('block', 'theme3-equals'); 
+    } 
   }
 }
 
-/*
-To Do 
-Need to make seperate classes for the colours of each theme. 
 
-*/ 
+
+
